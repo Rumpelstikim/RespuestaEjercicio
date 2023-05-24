@@ -17,21 +17,17 @@
 
 def my_fibonacci():
     a=0
-    b=0
-    my_list=[]
+    b=1
+    my_list=[0,1]
 
     while len(my_list) <50:
         x = a + b
         a=b
-        if b == 0:
-            b += 1
-        else:
-            b=x
+        b=x
         my_list.append(x)
    
     for element in my_list:
         print(element)
-
 
 my_fibonacci()
     
