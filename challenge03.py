@@ -13,3 +13,15 @@
 # * - Revisaré el ejercicio en directo desde Twitch el lunes siguiente al de su publicación.
 # * - Subiré una posible solución al ejercicio el lunes siguiente al de su publicación.
 
+def num_primo():
+    primo = True
+    lst = [2,3,5,7]
+    for n in range (2,100):
+        if n%2 ==0 or n%3 == 0 or n%5 == 0 or n%7== 0:
+            primo = False 
+            #determina los primos
+        else:
+            lst.append(n)
+    for element in lst:
+        print(element)
+num_primo()
